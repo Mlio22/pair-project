@@ -1,0 +1,137 @@
+[
+  {
+    "question": "Apa ibukota Prancis?",
+    "answer": {
+      "A": "Berlin",
+      "B": "Madrid",
+      "C": "Paris",
+      "D": "Roma"
+    }
+  },
+  {
+    "question": "Planet mana yang dikenal sebagai Planet Merah?",
+    "answer": {
+      "A": "Venus",
+      "B": "Mars",
+      "C": "Yupiter",
+      "D": "Saturnus"
+    }
+  },
+  {
+    "question": "Siapa yang menulis drama 'Romeo dan Juliet'?",
+    "answer": {
+      "A": "William Shakespeare",
+      "B": "Charles Dickens",
+      "C": "Jane Austen",
+      "D": "Leo Tolstoy"
+    }
+  },
+  {
+    "question": "Hewan mamalia terbesar di dunia adalah?",
+    "answer": {
+      "A": "Gajah",
+      "B": "Jerapah",
+      "C": "Paus Biru",
+      "D": "Singa"
+    }
+  },
+  {
+    "question": "Gas apa yang diserap tumbuhan dari atmosfer?",
+    "answer": {
+      "A": "Karbon Dioksida",
+      "B": "Oksigen",
+      "C": "Nitrogen",
+      "D": "Hidrogen"
+    }
+  },
+  {
+    "question": "Simbol kimia untuk emas adalah?",
+    "answer": {
+      "A": "Au",
+      "B": "Ag",
+      "C": "Fe",
+      "D": "Cu"
+    }
+  },
+  {
+    "question": "Di negara mana Tembok Besar Tiongkok berada?",
+    "answer": {
+      "A": "Jepang",
+      "B": "Korea Selatan",
+      "C": "Tiongkok",
+      "D": "India"
+    }
+  },
+  {
+    "question": "Apa organ terbesar dalam tubuh manusia?",
+    "answer": {
+      "A": "Jantung",
+      "B": "Paru-paru",
+      "C": "Kulit",
+      "D": "Hati"
+    }
+  },
+  {
+    "question": "Gas yang paling melimpah di atmosfer Bumi adalah?",
+    "answer": {
+      "A": "Oksigen",
+      "B": "Karbon Dioksida",
+      "C": "Nitrogen",
+      "D": "Helium"
+    }
+  },
+  {
+    "question": "Siapa yang dikenal sebagai bapak fisika modern?",
+    "answer": {
+      "A": "Isaac Newton",
+      "B": "Galileo Galilei",
+      "C": "Albert Einstein",
+      "D": "Stephen Hawking"
+    }
+  },
+  {
+    "question": "Angka prima terkecil adalah?",
+    "answer": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3"
+    }
+  },
+  {
+    "question": "Planet yang sering disebut sebagai 'Bintang Pagi' atau 'Bintang Sore' adalah?",
+    "answer": {
+      "A": "Mars",
+      "B": "Venus",
+      "C": "Merkurius",
+      "D": "Yupiter"
+    }
+  },
+  {
+    "question": "Samudera terbesar di dunia adalah?",
+    "answer": {
+      "A": "Samudera Atlantik",
+      "B": "Samudera Hindia",
+      "C": "Samudera Arktik",
+      "D": "Samudera Pasifik"
+    }
+  },
+  {
+    "question": "Simbol kimia untuk air adalah?",
+    "answer": {
+      "A": "H2O",
+      "B": "CO2",
+      "C": "O2",
+      "D": "NaCl"
+    }
+  },
+  {
+    "question": "Siapa penulis seri buku Harry Potter?",
+    "answer": {
+      "A": "George Orwell",
+      "B": "J.R.R. Tolkien",
+      "C": "J.K. Rowling",
+      "D": "Agatha Christie"
+    }
+  }
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- todo: tampilkan error jika ada -->
+
+  <form action="/register" method="post">
+    <label for="username">username:</label>
+    <input type="text" name="username" id="username">
+    <br>
+
+    <label for="email">email:</label>
+    <input type="email" name="email" id="email">
+    <br>
+
+    <label for="role">Role:</label>
+    <select name="role" id="role">
+      <option value="player">player</option>
+      <option value="GM">GM</option>
+    </select>
+    <br>
+
+    <label for="password">password:</label>
+    <input type="password" name="password" id="password">
+    <br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+
+</html>
