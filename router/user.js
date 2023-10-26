@@ -3,13 +3,11 @@ const UserController = require("../controllers/UserController");
 const router = express.Router();
 
 const checkLogin = (req, res, next) => {
-  console.log(req.session.user);
-  next();
-  // if (req.session.user) {
-  //   res.redirect("/quiz");
-  // } else {
-  //   next();
-  // }
+  if (req.session.user) {
+    res.redirect("/quiz");
+  } else {
+    next();
+  }
 };
 
 router.get("/register", checkLogin, UserController.showRegisterForm);

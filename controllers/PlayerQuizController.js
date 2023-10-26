@@ -32,7 +32,7 @@ class PlayerQuizController {
         QuizId: quizId,
       });
 
-      return res.redirect(`/quiz/${quizId}/question/1`);
+      return res.redirect(`/quiz/player/${quizId}/question/1`);
     } catch (error) {
       console.log(error);
       return res.send(error);
@@ -53,7 +53,7 @@ class PlayerQuizController {
       });
 
       if (order >= selectedQuestion.length) {
-        res.redirect(`/quiz/${quizId}/result`);
+        res.redirect(`/quiz/player/${quizId}/result`);
       }
 
       selectedQuestion = selectedQuestion[order];
@@ -99,7 +99,7 @@ class PlayerQuizController {
         });
       }
 
-      return res.redirect(`/quiz/${quizId}/question/${order + 1}`);
+      return res.redirect(`/quiz/player/${quizId}/question/${order + 1}`);
     } catch (error) {
       console.log(error);
       res.send(error);

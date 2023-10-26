@@ -1,6 +1,6 @@
 <%- include("../header", {title: title}) %>
 
-<form action="/quiz/<%= quizData.id %>/edit" method="POST">
+<form action="/quiz/admin/<%= quizData.id %>/edit" method="POST">
     <div class="mb-3">
         <label for="inputEmail4" class="form-label">Quiz Name</label>
         <input type="text" class="form-control" aria-label="First name" name="name" value="<%= quizData.name %>">

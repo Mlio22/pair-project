@@ -15,8 +15,16 @@ class UserController {
     try {
       const { username, email, password, role } = req.body;
 
-      await User.create({ username, email, password, role });
-      res.redirect("/login");
+      const createdUser = await User.create({ username, email, password, role });
+
+      req.session.user = {
+        id: createdUser.id,
+        username: createdUser.username,
+        role: createdUser.role,
+      }
+
+      res.redirect('/quiz')
+
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -47,12 +55,13 @@ class UserController {
         if (isvalid) {
           req.session.user = {
             id: selectedUser.id,
+            username: selectedUser.username,
             role: selectedUser.role,
           };
 
-          res.send("okeh");
+          res.redirect('/quiz')
         } else {
-          res.send("gagal");
+          res.redirect('/login?error=wrongCredentials')
           // todo: error dengan detail
         }
       } else {

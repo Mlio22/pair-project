@@ -54,7 +54,7 @@ class AdminQuizController {
           QuizId: addQuiz.id,
         });
       }
-      res.redirect("/quiz");
+      res.redirect("/quiz/admin");
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -99,7 +99,7 @@ class AdminQuizController {
         });
       });
 
-      res.redirect(`/quiz/${quizId}`);
+      res.redirect(`/quiz/admin/${quizId}`);
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -121,7 +121,6 @@ class AdminQuizController {
         },
       });
 
-      // res.send(`${selectedQuiz.id}`)
       res.render("admin/quiz-detail", { selectedQuiz, title: "Quiz Detail" });
     } catch (error) {
       console.log(error);
@@ -186,7 +185,7 @@ class AdminQuizController {
       }
 
       
-      res.redirect("/quiz")
+      res.redirect("/quiz/admin")
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -202,7 +201,7 @@ class AdminQuizController {
           id: +quizId,
         },
       });
-      res.redirect("/quiz");
+      res.redirect("/quiz/admin");
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -273,7 +272,7 @@ class AdminQuizController {
         });
       }
 
-      res.redirect(`/quiz/${quizId}`);
+      res.redirect(`/quiz/admin/${quizId}`);
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -296,7 +295,7 @@ class AdminQuizController {
         },
       });
 
-      res.redirect(`/quiz/${quizId}`);
+      res.redirect(`/quiz/admin/${quizId}`);
     } catch (error) {
       console.log(error);
       res.send(error);

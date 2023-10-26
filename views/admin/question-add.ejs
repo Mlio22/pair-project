@@ -1,6 +1,6 @@
 <%- include("../header", {title: title}) %>
 
-<form action="/quiz/<%= quizId %>/addQuestion" method="POST">
+<form action="/quiz/admin/<%= quizId %>/addQuestion" method="POST">
     <div class="mb-3">
         <label for="inputEmail4" class="form-label">Question:</label>
         <input type="text" class="form-control" name="question">

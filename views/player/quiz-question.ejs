@@ -1,7 +1,7 @@
 <%- include("../header", {title: title}) %>
 
 <div class="container">
-  <form action="/quiz/<%= selectedQuestion.QuizId %>/question/<%= order %>" method="post">
+  <form action="/quiz/player/<%= selectedQuestion.QuizId %>/question/<%= order %>" method="post">
     <h3><%= selectedQuestion.question %></h3>
   
     <% selectedQuestion.QuestionAnswers.forEach((answer, idx) => { %>
