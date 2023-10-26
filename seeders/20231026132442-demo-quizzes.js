@@ -37,10 +37,6 @@ module.exports = {
         });
       }
 
-      if (!questions) {
-        console.log(filename);
-      }
-
       for (const questionUnit of questions) {
         let { question, answers, imageFilename, rightAnswer } = questionUnit;
 
@@ -48,11 +44,10 @@ module.exports = {
 
         const questionInstance = await Question.create({ question, imageFilename });
         for (const answer in answers) {
-
           let isRightAnswer = answer === rightAnswer;
 
           await QuestionAnswer.create({
-            choice: answer,
+            choice: answers[answer],
             rightAnswer: isRightAnswer,
             QuestionId: questionInstance.id,
           });
