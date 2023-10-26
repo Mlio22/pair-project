@@ -1,0 +1,148 @@
+{
+  "UserId": 1,
+  "name": "Sejarah Indonesia",
+  "description": "Uji pengetahuan Anda tentang sejarah Indonesia dengan pertanyaan-pertanyaan berikut.",
+  "tags": ["History", "Indonesia"],
+  "questions": [
+    {
+      "question": "Siapakah presiden pertama Indonesia?",
+      "answers": {
+        "A": "Soekarno",
+        "B": "Soeharto",
+        "C": "Joko Widodo",
+        "D": "Megawati Sukarnoputri"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Tanggal berapa Proklamasi Kemerdekaan Indonesia?",
+      "answers": {
+        "A": "17 Agustus 1945",
+        "B": "1 Juni 1945",
+        "C": "20 Mei 1945",
+        "D": "10 November 1945"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Siapa yang memproklamasikan kemerdekaan Indonesia?",
+      "answers": {
+        "A": "Soekarno",
+        "B": "Hatta",
+        "C": "Megawati Sukarnoputri",
+        "D": "Joko Widodo"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Apa nama masa pemerintahan Soekarno dan Hatta?",
+      "answers": {
+        "A": "Masa Hindia Belanda",
+        "B": "Masa Jepang",
+        "C": "Masa Kolonial",
+        "D": "Masa Revolusi"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "question": "Siapa yang menjadi panglima besar dalam Perang Diponegoro?",
+      "answers": {
+        "A": "Diponegoro",
+        "B": "Gatot Subroto",
+        "C": "Jenderal Sudirman",
+        "D": "Ki Hajar Dewantara"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Apa nama perjanjian yang mengakhiri masa penjajahan Belanda di Indonesia?",
+      "answers": {
+        "A": "Perjanjian Renville",
+        "B": "Perjanjian Linggarjati",
+        "C": "Perjanjian Roem-Royen",
+        "D": "Perjanjian Giyanti"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Kapan Jepang menduduki Indonesia selama Perang Dunia II?",
+      "answers": {
+        "A": "1942-1945",
+        "B": "1939-1945",
+        "C": "1945-1949",
+        "D": "1949-1954"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Apa peristiwa yang terkenal dengan sebutan 'Serangan Umum 1 Maret'?",
+      "answers": {
+        "A": "G30S/PKI",
+        "B": "Pemilu 1955",
+        "C": "Operasi Militer Belanda I",
+        "D": "Pernyataan Kemerdekaan"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Siapakah tokoh yang dikenal sebagai 'Bapak Proklamasi'?",
+      "answers": {
+        "A": "Soekarno",
+        "B": "Soeharto",
+        "C": "Hatta",
+        "D": "Megawati Sukarnoputri"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Apa nama pertempuran laut terkenal dalam sejarah Indonesia pada masa Perang Dunia II?",
+      "answers": {
+        "A": "Pertempuran Ambarawa",
+        "B": "Pertempuran Surabaya",
+        "C": "Pertempuran Laut Jawa",
+        "D": "Pertempuran Banda Sea"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Siapakah tokoh Indonesia yang terkenal sebagai 'Pahlawan Nasional' yang menulis novel 'Bumi Manusia'?",
+      "answers": {
+        "A": "Sutan Sjahrir",
+        "B": "Pramoedya Ananta Toer",
+        "C": "Mohammad Hatta",
+        "D": "Sudirman"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Apa yang memicu terjadinya 'Perang Paderi' di Minangkabau pada abad ke-19?",
+      "answers": {
+        "A": "Pertentangan agama dan politik",
+        "B": "Invasi asing",
+        "C": "Kekeringan",
+        "D": "Pemberontakan petani"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Siapakah tokoh yang menjadi proklamator Kemerdekaan Indonesia bersama Soekarno?",
+      "answers": {
+        "A": "Hatta",
+        "B": "Megawati Sukarnoputri",
+        "C": "Soeharto",
+        "D": "Joko Widodo"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Apa nama peristiwa yang terkenal dengan sebutan 'Operasi Trisula'?",
+      "answers": {
+        "A": "Kudeta PKI",
+        "B": "Konferensi Asia-Afrika",
+        "C": "Operasi Militer Belanda II",
+        "D": "Penyerahan Jepang kepada Sekutu"
+      },
+      "correctAnswer": "A"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "UserId": 1,
+  "name": "Kuis Sejarah",
+  "description": "Uji pengetahuan Anda tentang peristiwa sejarah dengan pertanyaan-pertanyaan berikut.",
+  "tags": ["History"],
+  "questions": [
+    {
+      "question": "Siapakah Presiden pertama Amerika Serikat?",
+      "answers": {
+        "A": "Thomas Jefferson",
+        "B": "John Adams",
+        "C": "George Washington",
+        "D": "James Madison"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Pada tahun berapa Christopher Columbus mencapai benua Amerika?",
+      "answers": {
+        "A": "1492",
+        "B": "1510",
+        "C": "1607",
+        "D": "1776"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Apa yang menandai awal Perang Dunia I?",
+      "answers": {
+        "A": "Tenggelamnya Titanic",
+        "B": "Pembunuhan Archduke Franz Ferdinand",
+        "C": "Penandatanganan Perjanjian Versailles",
+        "D": "Pertempuran Stalingrad"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Siapakah penulis Deklarasi Kemerdekaan Amerika Serikat?",
+      "answers": {
+        "A": "George Washington",
+        "B": "John Adams",
+        "C": "Thomas Jefferson",
+        "D": "Benjamin Franklin"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Apa yang menjadi hasil dari Pertempuran Gettysburg selama Perang Saudara Amerika?",
+      "answers": {
+        "A": "Kemenangan Union",
+        "B": "Kemenangan Konfederasi",
+        "C": "Pertempuran berkecamuk",
+        "D": "Perjanjian Paris"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Suku kuno mana yang membangun piramida di Mesir?",
+      "answers": {
+        "A": "Kekaisaran Romawi",
+        "B": "Kekaisaran Yunani",
+        "C": "Orang Mesir Kuno",
+        "D": "Orang Mesopotamia"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Siapakah wanita pertama yang terbang solo melintasi Samudra Atlantik?",
+      "answers": {
+        "A": "Amelia Earhart",
+        "B": "Bessie Coleman",
+        "C": "Harriet Quimby",
+        "D": "Jacqueline Cochran"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Pada tahun berapa Amerika Serikat menjatuhkan bom atom di Hiroshima dan Nagasaki selama Perang Dunia II?",
+      "answers": {
+        "A": "1942",
+        "B": "1945",
+        "C": "1950",
+        "D": "1960"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "question": "Siapakah pemimpin Uni Soviet selama Krisis Rudal Kuba?",
+      "answers": {
+        "A": "Vladimir Putin",
+        "B": "Joseph Stalin",
+        "C": "Nikita Khrushchev",
+        "D": "Mikhail Gorbachev"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Kapan Perang Dunia I dimulai?",
+      "answers": {
+        "A": "1914",
+        "B": "1917",
+        "C": "1920",
+        "D": "1939"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Siapakah Ratu Inggris yang dikenal sebagai 'Ratu Merah'?",
+      "answers": {
+        "A": "Ratu Elizabeth I",
+        "B": "Ratu Victoria",
+        "C": "Ratu Mary I",
+        "D": "Ratu Anne"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Apa yang menjadi penyebab Revolusi Prancis?",
+      "answers": {
+        "A": "Kelaparan dan kemiskinan",
+        "B": "Monarki absolut",
+        "C": "Korupsi pemerintah",
+        "D": "Reformasi agama"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "question": "Siapakah tokoh Amerika Serikat yang terkenal dengan pidato 'I Have a Dream'?",
+      "answers": {
+        "A": "John F. Kennedy",
+        "B": "Malcolm X",
+        "C": "Martin Luther King Jr.",
+        "D": "Abraham Lincoln"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "question": "Pada tahun berapa Perang Dunia II berakhir?",
+      "answers": {
+        "A": "1943",
+        "B": "1945",
+        "C": "1950",
+        "D": "1960"
+      },
+      "correctAnswer": "B"
+    }
+  ]
+}

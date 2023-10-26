@@ -1,0 +1,158 @@
+{
+  "UserId": 1,
+  "name": "Kuis Geografi",
+  "description": "Uji pengetahuan Anda tentang wilayah.",
+  "tags": ["Geography"],
+  "questions": [
+    {
+      "question": "Apa ibukota Prancis?",
+      "answers": {
+        "A": "Berlin",
+        "B": "Madrid",
+        "C": "Paris",
+        "D": "Roma"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Dimana letak Pegunungan Himalaya?",
+      "answers": {
+        "A": "Amerika Serikat",
+        "B": "Nepal",
+        "C": "India",
+        "D": "Afghanistan"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Apa sungai terpanjang di dunia?",
+      "answers": {
+        "A": "Nil",
+        "B": "Amazon",
+        "C": "Mississippi",
+        "D": "Yangtze"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Di benua mana Anda dapat menemukan Gurun Sahara?",
+      "answers": {
+        "A": "Afrika",
+        "B": "Asia",
+        "C": "Amerika Utara",
+        "D": "Australia"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Apa nama laut terbesar di dunia?",
+      "answers": {
+        "A": "Laut Atlantik",
+        "B": "Laut Hindia",
+        "C": "Laut Pasifik",
+        "D": "Laut Arktik"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Negara manakah yang memiliki wilayah terbesar di dunia?",
+      "answers": {
+        "A": "Rusia",
+        "B": "Kanada",
+        "C": "Amerika Serikat",
+        "D": "Brasil"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Letak gunung tertinggi di dunia, Mount Everest, ada di negara mana?",
+      "answers": {
+        "A": "Nepal",
+        "B": "India",
+        "C": "Bhutan",
+        "D": "Tibet"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Apa ibukota Rusia?",
+      "answers": {
+        "A": "Moskow",
+        "B": "St. Petersburg",
+        "C": "Kiev",
+        "D": "Minsk"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Di mana Great Barrier Reef terletak?",
+      "answers": {
+        "A": "Kepulauan Fiji",
+        "B": "Pantai Australia",
+        "C": "Pulau Hawaii",
+        "D": "Pantai Meksiko"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Negara manakah yang memiliki puncak gunung tertinggi K2?",
+      "answers": {
+        "A": "Nepal",
+        "B": "Pakistan",
+        "C": "Tiongkok",
+        "D": "India"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Dimana letak Sungai Amazon?",
+      "answers": {
+        "A": "Amerika Serikat",
+        "B": "Brasil",
+        "C": "Kolombia",
+        "D": "Peru"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Apa nama samudera terbesar di dunia?",
+      "answers": {
+        "A": "Samudera Atlantik",
+        "B": "Samudera Hindia",
+        "C": "Samudera Pasifik",
+        "D": "Samudera Arktik"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Di benua mana Anda dapat menemukan Gurun Sahara?",
+      "answers": {
+        "A": "Afrika",
+        "B": "Asia",
+        "C": "Amerika Utara",
+        "D": "Australia"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Di mana Pulau Bali terletak?",
+      "answers": {
+        "A": "Thailand",
+        "B": "Filipina",
+        "C": "Indonesia",
+        "D": "Singapura"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Apa nama ibukota India?",
+      "answers": {
+        "A": "Mumbai",
+        "B": "Delhi",
+        "C": "Kolkata",
+        "D": "Chennai"
+      },
+      "rightAnswer": "B"
+    }
+  ]
+}

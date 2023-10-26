@@ -1,0 +1,148 @@
+{
+  "UserId": 1,
+  "name": "Kuis Pengetahuan Umum",
+  "description": "Uji pengetahuan umum Anda dengan pertanyaan-pertanyaan berikut.",
+  "tags": ["General"],
+  "questions": [
+    {
+      "question": "Apa ibukota Jepang?",
+      "answers": {
+        "A": "Tokyo",
+        "B": "Kyoto",
+        "C": "Osaka",
+        "D": "Nagoya"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Siapa penulis drama 'Romeo dan Juliet'?",
+      "answers": {
+        "A": "William Shakespeare",
+        "B": "Charles Dickens",
+        "C": "Jane Austen",
+        "D": "Leo Tolstoy"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Apa simbol kimia untuk emas?",
+      "answers": {
+        "A": "Go",
+        "B": "Gd",
+        "C": "Au",
+        "D": "Ag"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Pada tahun berapa Deklarasi Kemerdekaan Amerika Serikat diadopsi?",
+      "answers": {
+        "A": "1776",
+        "B": "1787",
+        "C": "1799",
+        "D": "1805"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Apa planet terbesar dalam tata surya kita?",
+      "answers": {
+        "A": "Bumi",
+        "B": "Mars",
+        "C": "Jupiter",
+        "D": "Saturnus"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Berapa jumlah benua di dunia?",
+      "answers": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Apa hewan terbesar di darat?",
+      "answers": {
+        "A": "Singa",
+        "B": "Gajah",
+        "C": "Jerapah",
+        "D": "Badak"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Siapa penulis novel 'To Kill a Mockingbird'?",
+      "answers": {
+        "A": "Harper Lee",
+        "B": "F. Scott Fitzgerald",
+        "C": "George Orwell",
+        "D": "Mark Twain"
+      },
+      "rightAnswer": "A"
+    },
+    {
+      "question": "Apa nama laut terbesar di dunia?",
+      "answers": {
+        "A": "Laut Atlantik",
+        "B": "Laut Hindia",
+        "C": "Laut Pasifik",
+        "D": "Laut Arktik"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Di mana Pulau Bali terletak?",
+      "answers": {
+        "A": "Thailand",
+        "B": "Filipina",
+        "C": "Indonesia",
+        "D": "Singapura"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Apa nama ibukota India?",
+      "answers": {
+        "A": "Mumbai",
+        "B": "Delhi",
+        "C": "Kolkata",
+        "D": "Chennai"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Berapa jumlah negara anggota PBB saat ini?",
+      "answers": {
+        "A": "190",
+        "B": "194",
+        "C": "197",
+        "D": "200"
+      },
+      "rightAnswer": "B"
+    },
+    {
+      "question": "Apa nama samudera terbesar di dunia?",
+      "answers": {
+        "A": "Samudera Atlantik",
+        "B": "Samudera Hindia",
+        "C": "Samudera Pasifik",
+        "D": "Samudera Arktik"
+      },
+      "rightAnswer": "C"
+    },
+    {
+      "question": "Berapa jumlah planet dalam tata surya kita?",
+      "answers": {
+        "A": "6",
+        "B": "8",
+        "C": "9",
+        "D": "10"
+      },
+     "rightAnswer": "D"
+    }
+  ]
+}
