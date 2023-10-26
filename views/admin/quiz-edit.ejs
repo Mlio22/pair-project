@@ -7,9 +7,10 @@
     </div>
     <div class="mb-3">
         <label for="inputEmail4" class="form-label">Tags</label>
+        <br>
         <% tags.forEach((el,idx) => { %>
-            <div>
-                <input type="checkbox" class="btn-check" id="btn-check-outlined-<%= idx %>" autocomplete="off" name="tag" value="<%= el.id %>">
+            <div style="display: inline;">
+                <input type="checkbox" class="btn-check" id="btn-check-outlined-<%= idx %>" autocomplete="off" name="tag" value="<%= el.id %>" <%= selectedTagIds.includes(el.id) ? "checked" : "" %>>
                 <label class="btn btn-outline-primary" for="btn-check-outlined-<%= idx %>"><%= el.name %></label>
             </div> 
         <% }) %>

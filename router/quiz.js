@@ -3,32 +3,31 @@ const router = express.Router();
 const PlayerQuizController = require("../controllers/PlayerQuizController.js");
 const AdminQuizController = require("../controllers/AdminQuizController.js");
 
-let isAdmin = false;
+let isAdmin = true;
 let isPlayer = false;
 
 function checkUser(req, res, next) {
-  if (!req.session.user) {
-    res.redirect("/login");
-  } else {
-    next();
-  }
+  next();
+  // if (!req.session.user) {
+  //   res.redirect("/login");
+  // } else {
+  //   next();
+  // }
 }
 
 function checkPlayer(req, res, next) {
   if (req.session.user?.role === "Player" || isPlayer) {
-    console.log();
     next();
-  }
+  } 
+  // todo: check dan redirect pengguna sesuai role
 }
 
 function checkAdmin(req, res, next) {
   if (req.session.user?.role === "Admin" || isAdmin) {
-    console.log("admin");
     next();
   }
+  // todo: check dan redirect pengguna sesuai role
 }
-
-// npx sequelize-cli model:generate --name UserQuiz --attributes UserId:integer,QuizId:integer
 
 router.get("/", checkUser, (req, res) => {
   if (req.session.user?.role === "Admin") {

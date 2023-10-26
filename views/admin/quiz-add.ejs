@@ -7,15 +7,16 @@
     </div>
     <div class="mb-3">
         <label for="inputEmail4" class="form-label">Tags</label>
+        <br>
         <% tags.forEach((el,idx) => { %>
-            <div>
+            <div style="display: inline;">
                 <input type="checkbox" class="btn-check" id="btn-check-outlined-<%= idx %>" autocomplete="off" name="tag" value="<%= el.id %>">
                 <label class="btn btn-outline-primary" for="btn-check-outlined-<%= idx %>"><%= el.name %></label>
             </div> 
         <% }) %>
     </div>
     <div class="mb-3">  
-        <label for="inputEmail4" class="form-label"></label>
+        <label for="inputEmail4" class="form-label">Description (Optional)</label>
         <textarea class="form-control" name="description"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

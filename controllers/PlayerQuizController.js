@@ -1,22 +1,47 @@
-const { Question, QuestionAnswer, Quiz, Tag, User, UserQuiz } = require("../models");
-const { Op, or } = require("sequelize");
+const { Question, QuestionAnswer, Quiz, Tag, QuizTag, User, UserQuiz } = require("../models");
+const {Op} = require('sequelize')
 
 class PlayerQuizController {
   static async showQuizzes(req, res) {
     try {
+      // todo: pindahin ke static method model
+      // todo: buat query sorting berdasarkan jumlah soal
+      // todo: buat query search berdasarkan tag (done)
+      const { tag } = req.query;
+
+      let tagQuery = {};
+      if (tag) {
+        tagQuery.where = {
+          name: {
+            [Op.eq]: tag
+          }
+        }
+      }
+
       let data = await Quiz.findAll({
-        attributes: ["id", "name", "description"],
-        include: {
-          attributes: ["id"],
-          model: Question,
-        },
+        include: [
+          {
+            model: Question,
+            attributes: ["id"],
+          },
+          {
+            model: Tag,
+            attributes: ['id', 'name'],
+            ...tagQuery
+          },
+        ],
       });
+
+      data = data.filter(quiz => {
+        return quiz.Questions.length > 0
+      })
 
       return res.render("player/quiz-list", {
         title: "Quiz List",
         quizData: data,
       });
     } catch (error) {
+      // todo: tampilkan error
       console.log(error);
       res.send(error);
     }
@@ -42,6 +67,7 @@ class PlayerQuizController {
   static async getQuestionById(req, res) {
     try {
       const { quizId, order } = req.params;
+      // todo: pindahin ke static method model
 
       let selectedQuestion = await Question.findAll({
         attributes: ["id", "question", "QuizId"],
@@ -72,6 +98,7 @@ class PlayerQuizController {
 
       order = +order;
 
+      // todo: pindahin ke static method model
       let selectedQuestion = await Question.findAll({
         attributes: ["id"],
         where: {
@@ -81,6 +108,7 @@ class PlayerQuizController {
 
       selectedQuestion = selectedQuestion[order];
 
+      // todo: pindahin ke static method model
       const rightAnswer = await QuestionAnswer.findOne({
         attributes: ["id", "rightAnswer", "choice"],
         where: {
@@ -89,7 +117,7 @@ class PlayerQuizController {
         },
       });
 
-      const userId = req.session.user?.id || 1;
+      const userId = req.session.user?.id;
 
       if (rightAnswer.choice === answer) {
         await UserQuiz.increment("score", {
@@ -110,6 +138,7 @@ class PlayerQuizController {
     try {
       const { quizId } = req.params;
 
+      // todo: pindahin ke static method model
       const selectedData = await UserQuiz.findOne({
         attributes: ["score"],
         where: {
@@ -118,6 +147,7 @@ class PlayerQuizController {
         order: [["updatedAt", "DESC"]],
       });
 
+      // todo: pindahin ke static method model
       const selectedQuiz = await Quiz.findOne({
         attributes: [],
         where: {

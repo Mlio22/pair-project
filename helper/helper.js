@@ -15,4 +15,20 @@ function shuffleArray(array) {
   return array;
 }
 
-module.exports = { shuffleArray };
+function getErrorMessages(error) {
+  return error.errors.map(err => {
+    return err.message
+  })
+}
+
+function retrieveErrors(error) {
+  let errors;
+
+  if (error) {
+    errors = error.split(',')
+  }
+
+  return errors
+}
+
+module.exports = { shuffleArray, getErrorMessages, retrieveErrors };

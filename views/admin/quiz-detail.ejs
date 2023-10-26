@@ -3,11 +3,14 @@
     <h1>
         <%= selectedQuiz.name %>
     </h1>
-    <h3>
+    <p>
         <%= selectedQuiz.description %>
-    </h3>
-      <a href="/quiz/admin/<%= selectedQuiz.id %>/edit"><button>Edit Quiz</button></a>
-      <a href="/quiz/admin/<%= selectedQuiz.id %>/addQuestion"><button>Add Question</button></a>
+    </p>
+
+      <div style="padding: 10px">
+        <a href="/quiz/admin/<%= selectedQuiz.id %>/edit"><button class="btn btn-primary">Edit Quiz</button></a>
+        <a href="/quiz/admin/<%= selectedQuiz.id %>/addQuestion"><button class="btn btn-primary">Add Question</button></a>
+      </div>
 </div>
 <table class="table table-dark table-striped-columns">
     <thead>
