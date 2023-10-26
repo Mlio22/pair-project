@@ -42,7 +42,7 @@ module.exports = {
 
         imageFilename = imageFilename || null;
 
-        const questionInstance = await Question.create({ question, imageFilename });
+        const questionInstance = await Question.create({ question, imageFilename, QuizId: quizInstance.id });
         for (const answer in answers) {
           let isRightAnswer = answer === rightAnswer;
 

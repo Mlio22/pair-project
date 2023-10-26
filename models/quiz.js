@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Quiz extends Model {
     /**
@@ -12,16 +10,52 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Quiz.belongsTo(models.User);
       Quiz.hasMany(models.Question);
-      Quiz.belongsToMany(models.Tag, {through: 'QuizTag', foreignKey: 'QuizId'});
+      Quiz.belongsToMany(models.Tag, { through: "QuizTag", foreignKey: "QuizId" });
+    }
+
+    get totalQuestions() {
+      return this.Questions.length;
     }
   }
-  Quiz.init({
-    name: DataTypes.STRING,
-    description: DataTypes.TEXT,
-    UserId: DataTypes.INTEGER
-  }, {
-    sequelize,
-    modelName: 'Quiz',
-  });
+  Quiz.init(
+    {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notNull: {
+            args: true,
+            msg: "Name must not be empty.",
+          },
+          notEmpty: {
+            args: true,
+            msg: "Name must not be empty.",
+          },
+        },
+      },
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      UserId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+          notNull: {
+            args: true,
+            msg: "UserId must not be empty.",
+          },
+          isInt: {
+            args: true,
+            msg: "UserId must be an integer.",
+          },
+        },
+      },
+    },
+    {
+      sequelize,
+      modelName: "Quiz",
+    }
+  );
   return Quiz;
 };

@@ -1,8 +1,14 @@
 [
   {
-    "username": "Admin",
+    "username": "admin",
     "email": "admin@gmail.com ",
-    "password": "$2b$10$CvOYKuBHJG//B14uMQ5RYO.8vOrTGtPMKm4Ib7jbBKcUlxiDgDOxC",
+    "password": "$2b$10$EhydcPh9f5N/iS4dG5YyM.hxzHTVQFs0CjUzGYm/.bCo5oijwq4cG",
     "role": "Admin"
+  },
+  {
+    "username": "player",
+    "email": "player@gmail.com ",
+    "password": "$2b$10$EhydcPh9f5N/iS4dG5YyM.hxzHTVQFs0CjUzGYm/.bCo5oijwq4cG",
+    "role": "Player"
   }
 ]

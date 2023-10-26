@@ -1,0 +1,24 @@
+<%- include("../header", {title: title}) %>
+
+<form action="/quiz/<%= quizId %>/addQuestion" method="POST">
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label">Question:</label>
+        <input type="text" class="form-control" name="question">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputEmail4" class="form-label">Right Answer:</label>
+      <input type="text" class="form-control" name="rightAnswer">
+    </div>
+
+    <% [1,2,3].forEach(number => { %>
+      <div class="mb-3">
+        <label for="wrongAnswer<%= number %>" class="form-label">Wrong Answer <%= number %>:</label>
+        <input type="text" class="form-control" id="wrongAnswer<%= number %>" name="wrongAnswer">
+      </div>
+    <% }) %>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include("../footer") %>

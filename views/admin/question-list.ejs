@@ -16,16 +16,16 @@
         </tr>
       </thead>
       <tbody>
-        <% dataQuestion.forEach((el, index) => { %>
+        <% questionData.forEach((el, index) => { %>
           <tr>
             <th scope="row"><%= `${index + 1}` %></th>
             <td><%= el.name %></td>
             <td>
-                <a href="/quiz/:quizId/edit"> 
+                <a href="/quiz/<%= el.Quiz.id %>/edit"> 
                     <button type="button" class="btn btn-primary">Edit</button>
                 </a>
-                <a href="/quiz/:quizId/edit"> 
-                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <a href="/quiz/<%= el.Quiz.id %>/edit"> 
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
                 </a>
             </td>
           </tr>

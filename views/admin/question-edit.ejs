@@ -1,0 +1,24 @@
+<%- include("../header", {title: title}) %>
+
+<form action="/quiz/<%= quizId %>/<%= selectedQuestion.id %>/edit" method="POST">
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label">Question:</label>
+        <input type="text" class="form-control" name="question" value="<%= selectedQuestion.question %>">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputEmail4" class="form-label">Right Answer:</label>
+      <input type="text" class="form-control" name="rightAnswer" value="<%= rightAnswer.choice %>">
+    </div>
+
+    <% wrongAnswers.forEach((wrongAnswer,idx) => { %>
+      <div class="mb-3">
+        <label for="wrongAnswer<%= idx+1 %>" class="form-label">Wrong Answer <%= idx+1 %>:</label>
+        <input type="text" class="form-control" id="wrongAnswer<%= idx+1 %>" name="wrongAnswer" value="<%= wrongAnswer.choice %>">
+      </div>
+    <% }) %>
+    
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+
+<%- include("../footer") %>

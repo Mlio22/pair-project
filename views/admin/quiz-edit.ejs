@@ -1,0 +1,24 @@
+<%- include("../header", {title: title}) %>
+
+<form action="/quiz/<%= quizData.id %>/edit" method="POST">
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label">Quiz Name</label>
+        <input type="text" class="form-control" aria-label="First name" name="name" value="<%= quizData.name %>">
+    </div>
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label">Tags</label>
+        <% tags.forEach((el,idx) => { %>
+            <div>
+                <input type="checkbox" class="btn-check" id="btn-check-outlined-<%= idx %>" autocomplete="off" name="tag" value="<%= el.id %>">
+                <label class="btn btn-outline-primary" for="btn-check-outlined-<%= idx %>"><%= el.name %></label>
+            </div> 
+        <% }) %>
+    </div>
+    <div class="mb-3">
+        <label for="inputEmail4" class="form-label"></label>
+        <textarea class="form-control" name="description"><%= quizData.description %></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include("../footer") %>

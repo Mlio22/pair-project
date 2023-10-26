@@ -1,0 +1,18 @@
+<%- include("../header", {title: title}) %>
+
+<div class="container">
+  <form action="/quiz/<%= selectedQuestion.QuizId %>/question/<%= order %>" method="post">
+    <h3><%= selectedQuestion.question %></h3>
+  
+    <% selectedQuestion.QuestionAnswers.forEach((answer, idx) => { %>
+     <input required type="radio" name="answer" id="answer<%= idx + 1 %>" value="<%= answer.choice %>">
+     <label for="answer<%= idx + 1 %>"><%= answer.choice %></label>
+     <br>
+    <% }) %>
+  
+    <button type="submit">Jawab</button>
+  
+  </form>
+</div>
+
+<%- include("../footer") %>

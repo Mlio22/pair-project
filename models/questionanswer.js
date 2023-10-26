@@ -14,9 +14,44 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   QuestionAnswer.init({
-    choice: DataTypes.STRING,
-    rightAnswer: DataTypes.BOOLEAN,
-    QuestionId: DataTypes.INTEGER
+    choice: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: "Choice must not be empty."
+        },
+        notEmpty: {
+          args: true,
+          msg: "Choice must not be empty."
+        },
+     },
+    },
+    rightAnswer: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: "rightAnswer must not be empty."
+        },
+     },
+    },
+    QuestionId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: "QuestionId must not be empty."
+        },
+        isInt: {
+          args: true,
+          msg: "QuestionId must be an integer."
+        },
+     },
+    }
   }, {
     sequelize,
     modelName: 'QuestionAnswer',

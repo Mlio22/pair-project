@@ -14,8 +14,34 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   QuizTag.init({
-    QuizId: DataTypes.INTEGER,
-    TagId: DataTypes.INTEGER
+    QuizId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: "QuizId must not be empty"
+        },
+        isInt: {
+          args: true,
+          msg: "QuizId must be a integer."
+        },
+     }, 
+    },
+    TagId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: "TagId must be a integer."
+        },
+        isInt: {
+          args: true,
+          msg: "TagId must be a integer."
+        },
+     },
+    }
   }, {
     sequelize,
     modelName: 'QuizTag',
